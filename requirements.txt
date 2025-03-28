@@ -1,14 +1,6 @@
+# Flask and essential extensions
 flask
 flask-cors
-gunicorn
-requests
-numpy
-pandas
-torch
-transformers
-scikit-learn
-openai
-huggingface_hub
 flask-socketio
 flask-wtf
 flask-login
@@ -17,9 +9,26 @@ flask-sqlalchemy
 flask-migrate
 flask-restful
 flask-jwt-extended
-sqlalchemy
-pymysql
+
+# Web server & security
+gunicorn
 bcrypt
 itsdangerous
 jinja2
+
+# Database
+sqlalchemy
+pymysql
+
+# AI & ML dependencies
+torch
+transformers
+scikit-learn
+numpy
+pandas
+openai
+huggingface_hub
 google-generativeai
+
+# Requests library for API calls
+requests
