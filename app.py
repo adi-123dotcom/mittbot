@@ -1,13 +1,15 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 import google.generativeai as genai  # Google Gemini API
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)
 
-# 🔹 Google Gemini API Setup (Replace with your actual API Key)
-API_KEY = "AIzaSyBI_6DGp_Ja_qEdhITwrhPYuhUAPMZBQ8I"
-genai.configure(api_key=API_KEY)
+# 🔹 Google Gemini API Setup
+load_dotenv()
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # 🎯 Predefined responses with emojis
 custom_responses = {
