@@ -1,34 +1,12 @@
 # Flask and essential extensions
 flask
 flask-cors
-flask-socketio
-flask-wtf
-flask-login
-flask-mail
-flask-sqlalchemy
-flask-migrate
-flask-restful
-flask-jwt-extended
 
 # Web server & security
 gunicorn
-bcrypt
-itsdangerous
-jinja2
-
-# Database
-sqlalchemy
-pymysql
-
-# AI & ML dependencies
-torch
-transformers
-scikit-learn
-numpy
-pandas
 openai
-huggingface_hub
 google-generativeai
+dotenv
 
 # Requests library for API calls
 requests
